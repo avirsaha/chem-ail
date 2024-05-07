@@ -3,148 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="res/icons/favicon.ico">
-  <title>Chemistry Art Integrated Learning Project</title>
+  <title>Research Paper</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 12pt;
-      line-height: 1.6;
+      font-family: 'EB Garamond', serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
+      background-color: #fffff2; /* Very light yellowish-white background */
+      color: #333; /* Dark gray text color */
     }
-    header, footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-    /*
+
     header {
-      background: linear-gradient(rgba(255,255,255,1) 4%, rgba(131,130,130,1) 31%, rgba(78,75,75,1) 55%, rgba(0,0,0,1) 100%);
+      background-color: #f2f2f2; /* Light gray header background */
+      color: #333; /* Dark gray header text color */
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    */
-    footer {
-      padding: 1px
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li:not(:last-child):after {
+      content: '|';
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
     main {
       padding: 20px;
     }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 0;
+
+    section {
+      background-color: #ffffff; /* White section background */
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
     }
-    a {
-      color: aquamarine;
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #4CAF50; /* Green section heading color */
+      font-size: 24px;
+      font-weight: bold;
     }
-    p {
-      margin-bottom: 1em;
+
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-indent: 30px;
     }
-    .abstract {
+
+    section p:first-of-type:first-letter {
+      float: left;
+      font-size: 48px;
+      line-height: 1;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    section em {
       font-style: italic;
     }
-    section {
+
+    .image-placeholder {
+      flex: 1;
       margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
     }
-    section h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
+
+    .image-placeholder img {
+      width: 100%;
+      height: auto;
     }
-    .column {
-      column-count: 2;
-      column-gap: 40px;
+
+    footer {
+      background-color: #333; /* Dark gray footer background */
+      color: #fff; /* White footer text color */
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+      section {
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .image-placeholder {
+        order: 1; /* Move image to the right on larger screens */
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+
+      section p {
+        flex: 2;
+      }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <!--
-  <img
-  src="res/icons/favicon.svg"
-  height="150"
-  width="150" />
-  -->
-  <h1>Three Dimensional Structures Of Organic Molecules & Their Importance In Daily Life</h1>
-  <p>Aviraj Saha</p>
-  <p>B. D. Memorial International</p>
-  <p>Date</p>
-</header>
-
-<main>
-
-  <section>
-    <h2>Abstract</h2>
-    <div class="column">
-      <p class="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Introduction</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Methodology</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Results</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Discussion</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Conclusion</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Acknowledgement</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Referance</h2>
-    <div class="column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus sit amet sem sodales, sit amet tempor sapien tincidunt. Nullam et placerat lacus, nec dictum enim. Ut dapibus venenatis eros, ac fermentum turpis vestibulum nec. In vehicula, magna sit amet varius fringilla, nunc mauris eleifend leo, in faucibus elit elit a eros. Cras quis dolor neque. Sed ullamcorper aliquam tortor ut interdum.</p>
-      <p>Nullam tempus pharetra libero, nec malesuada lorem fringilla eu. Nam bibendum ultrices enim non facilisis. Phasellus luctus volutpat dolor, at aliquam quam sodales sed. Nullam pretium ante felis, nec malesuada dui fermentum nec. Sed nec malesuada turpis. Duis lobortis risus nec lectus condimentum, vel congue magna pulvinar. Curabitur id metus eget mi fringilla volutpat.</p>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p>Contact Information: <a href="mailto:aviraj.bdm@gmail.com">aviraj.bdm@gmail.com</a></p>
-  <p>Additional Information: [Insert additional information here]</p>
-</footer>
-
+  <header>
+    <h1>Research Paper Title</h1>
+    <h2>Topic: Your Topic</h2>
+    <p>Author: Your Name</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#abstract">Abstract</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#discussion">Discussion</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="abstract">
+      <div class="image-placeholder"><img src="https://via.placeholder.com/400x300" alt="Abstract Image Placeholder"></div>
+      <div>
+        <h2>Abstract</h2>
+        <p><span>The</span> summary of your research is presented here in a concise manner, providing readers with an overview of the key findings and conclusions.</p>
+      </div>
+    </section>
+    <section id="introduction">
+      <div class="image-placeholder"><img src="https://via.placeholder.com/400x300" alt="Introduction Image Placeholder"></div>
+      <div>
+        <h2>Introduction</h2>
+        <p><span>T</span>he introduction sets the stage for your research, offering background information, stating the research problem, and outlining the objectives and scope of the study.</p>
+      </div>
+    </section>
+    <section id="methodology">
+      <div class="image-placeholder"><img src="https://via.placeholder.com/400x300" alt="Methodology Image Placeholder"></div>
+      <div>
+        <h2>Methodology</h2>
+        <p><span>M</span>ethodology describes the methods and techniques employed in your research, including data collection, analysis, and any experimental procedures conducted.</p>
+      </div>
+    </section>
+    <section id="results">
+      <div class="image-placeholder"><img src="https://via.placeholder.com/400x300" alt="Results Image Placeholder"></div>
+      <div>
+        <h2>Results</h2>
+        <p><span>R</span>esults present the empirical findings of your research, often accompanied by tables, graphs, or figures to illustrate key trends and patterns.</p>
+      </div>
+    </section>
+    <section id="discussion">
+      <div class="image-placeholder"><img src="https://via.placeholder.com/400x300" alt="Discussion Image Placeholder"></div>
+      <div>
+        <h2>Discussion</h2>
+        <p><span>D</span>iscussion interprets the results, evaluates their significance, and relates them to existing literature, highlighting implications and potential areas for future research.</p>
+      </div>
+    </section>
+    <section id="conclusion">
+      <div class="image-placeholder"><img src="https://via.placeholder.com/400x300" alt="Conclusion Image Placeholder"></div>
+      <div>
+        <h2>Conclusion</h2>
+        <p><span>C</span>onclusion summarizes the main findings of your research, reaffirms the research objectives, and offers insights into the broader implications of the study.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Your Name</p>
+  </footer>
 </body>
 </html>
