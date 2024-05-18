@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Paper</title>
+  <title>Chemistry AIL</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -24,7 +24,7 @@
 
     nav ul {
       list-style-type: none;
-      margin: 0;
+      margin: 2%;
       padding: 0;
       text-align: center;
     }
@@ -32,12 +32,14 @@
     nav ul li {
       display: inline;
       margin-right: 10px;
+      margin-top: 10px;
     }
 
     nav ul li:not(:last-child):after {
-      content: '|';
-      margin-left: 10px;
-      margin-right: 10px;
+      content: none;
+      margin-left: 6%;
+      margin-right: 3%;
+      color: #4CAF50;
     }
 
     nav ul li a {
@@ -45,7 +47,11 @@
       color: #333;
       font-weight: bold;
     }
-
+    li{
+      padding: 25px;
+      text-indent: 20%;
+      text-align: center;
+    }
     main {
       padding: 20px;
     }
@@ -96,6 +102,10 @@
       width: 100%;
       height: auto;
     }
+    .school_logo img {
+      width: 10%;
+      height: auto;
+    }
 
     footer {
       background-color: #333; /* Dark gray footer background */
@@ -112,8 +122,23 @@
         flex-direction: row;
         align-items: center;
       }
-      
+      nav ul li a {
+      text-decoration: none;
+      color: #214922;
+      font-weight: bold;
+    }
+    nav ul li:not(:last-child):after {
+      content: '|';
+      margin-left: 4%;
+      margin-right: 0%;
+      color: #4CAF50;
+    }
       .image-placeholder {
+        order: 1; /* Move image to the right on larger screens */
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+      .school_logo {
         order: 1; /* Move image to the right on larger screens */
         margin-right: 20px;
         margin-bottom: 0;
@@ -127,9 +152,10 @@
 </head>
 <body>
   <header>
-    <h1>Research Paper Title</h1>
-    <h2>Topic: Your Topic</h2>
-    <p>Author: Your Name</p>
+    <div class="school_logo"><img src="./res/images/school_logo.png" alt="Introduction Image Placeholder"></div>
+    <h1>Chemistry AIL</h1>
+    <h2>Topic: Molecular Modelling</h2>
+    <p><!--Author:-->By Aviraj Saha</p>
   </header>
   <nav>
     <ul>
@@ -186,7 +212,7 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Your Name</p>
+    <p>&copy; 2024 Aviraj Saha</p>
   </footer>
 </body>
 </html>
